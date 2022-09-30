@@ -34,6 +34,7 @@ internal class Menu
             Imprimir("* 3. Ordenar arreglo mayor a menor   *");
             Imprimir("* 4. Listar modelos de max 5 años    *");
             Imprimir("* 5. Listar Nombres de Api Rick & Mor*");
+            Imprimir("* 6. Salir                           *");
             Imprimir("*------------------------------------*");
             Opcion = Console.ReadLine();
 
@@ -95,6 +96,11 @@ internal class Menu
 
                         break;
                     }
+                case"6":
+                    {
+                        Bandera = true;
+                        break;
+                    }
                 default:
                     {
                         Imprimir("\n" + "\n" + "\n" + "Te has equivocado de opcion, por favor vuelve a ingresar los datos" + "\n" + "\n" + "\n");
@@ -103,5 +109,8 @@ internal class Menu
             }
 
         } while (Bandera != true);
+
+        Console.WriteLine("\n" + "\n" + "Hecho por: Cristian Rendon Rodriguez" );
+        Console.WriteLine("Prueba Tecnica de SourceCol, Gracias por la oportunidad :)");
     }
 }
