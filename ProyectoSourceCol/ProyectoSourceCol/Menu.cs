@@ -47,6 +47,14 @@ internal class Menu
                         Imprimir("\n" + "Cadena Recortada: " + AuxCadena + "\n");
                         break;
                     }
+                case "2":
+                    {
+                        Imprimir("\n" + "\n" + "!-----------Punto2----------!" + "\n" + "\n" + "Ingrese un valor (numerico):");
+                        string Cadena = Console.ReadLine();
+                        Punto2 punto2 = new Punto2(); //crea un objeto de la clase Punto2 para poder usar sus metodos
+                        punto2.ValidadFibonacci(Cadena);
+                        break;
+                    }
                 default:
                     {
                         Imprimir("\n" + "\n" + "\n" + "Te has equivocado de opcion, por favor vuelve a ingresar los datos" + "\n" + "\n" + "\n");
