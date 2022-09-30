@@ -8,6 +8,7 @@
 
 
 using ProyectoSourceCol.Clases;
+using ProyectoSourceCol.Clases.Punto4;
 
 internal class Menu
 {
@@ -65,6 +66,18 @@ internal class Menu
                         arreglo = punto3.CrearArrelo(arreglo);
                         arreglo = punto3.OrganizarArreglo(arreglo);
                         punto3.MostrarArreglo(arreglo);
+                        break;
+                    }
+                case "4":
+                    {
+                        Imprimir("\n" + "\n" + "!-----------Punto4----------!" + "\n" + "\n");
+
+                        Punto4 punto4 = new Punto4();
+                        List<Car> list = new List<Car>();
+                        list = punto4.ArmarLista();
+                        list = punto4.MostrarLista(list);
+                        list = punto4.ListaClasificada(list);
+                        //Console.WriteLine(list);
                         break;
                     }
                 default:
