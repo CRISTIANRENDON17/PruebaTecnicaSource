@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /*tipo de letra o fuente*/
+}
+
+table,
+th,
+td {
+    border: 1px solid rgba(0, 0, 0, .2);
+    /*diseño del borde de la tabla*/
+}
+
+table {
+    border-collapse: collapse;
+    /*une las líneas de los bordes para no dejar espacio entre ellas*/
+    width: auto 500px;
+    /*ancho de la tabla en pixeles*/
+    text-align: center;
+    /*alinea el texto que se encuentra en la tabla*/
+}
+
+th,
+td {
+    padding: 10px 20px;
+    /*espacio que se encuentra entre el texto y el borde*/
+}
+
+th {
+    background: #009ddc;
+    /*coloca el color del fondo*/
+    color: #ffffff;
+    /*color de la letra*/
+}
+
+tr:hover {
+    background: #b4b4b4;
+    /*coloca el fondo pero cuando el mouse pase por la fila*/
+}
+
+.colorLetra{
+    color: #0077ff;
+}
+
+//Hecho por Cristian Rendon Rodriguez
