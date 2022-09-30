@@ -9,6 +9,7 @@
 
 using ProyectoSourceCol.Clases;
 using ProyectoSourceCol.Clases.Punto4;
+using ProyectoSourceCol.Clases.Punto5;
 
 internal class Menu
 {
@@ -78,6 +79,20 @@ internal class Menu
                         list = punto4.MostrarLista(list);
                         list = punto4.ListaClasificada(list);
                         //Console.WriteLine(list);
+                        break;
+                    }
+                case "5":
+                    {
+                        Imprimir("\n" + "\n" + "!----------------------Punto5----------------------!" + "\n" + "\n");
+                        Imprimir("Ingrese cuantos personajes quiere enlistar  max(825 personajes):");
+                        string Cadena = Console.ReadLine();
+                        Punto5 punto5 = new Punto5();
+                        punto5.ListarPersinajes(Cadena);
+                        /* coloco un pause, porque como la funcion es asyncrona entonces cargaria el menu de 
+                         * nuevo otra vez y despues pintaria los personajes en pantalla, asi evito el conflicto*/
+                        Console.WriteLine("Espere un momento a que la data cargue, y presiona cualquier tecla para continuar" + "\n");
+                        Console.ReadLine();
+
                         break;
                     }
                 default:
