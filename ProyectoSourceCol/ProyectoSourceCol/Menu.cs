@@ -6,6 +6,9 @@
  * Fecha de entrega: 1/10/2022
  */
 
+
+using ProyectoSourceCol.Clases;
+
 internal class Menu
 {
     //se usa para que sea mas facil y corto imprimir una data en consola
@@ -38,10 +41,10 @@ internal class Menu
                     {
                         Imprimir("\n" + "\n" + "!-----------Punto1----------!" + "\n" + "\n" + "Ingrese una cadena:");
                         string Cadena = Console.ReadLine();
-                        //Punto1 punto1 = new Punto1(); //crea un objeto de la clase Punto1 para poder usar sus metodos
-                        //string AuxCadena = punto1.RecibirCadenaHasta20(Cadena);
+                        Punto1 punto1 = new Punto1(); //crea un objeto de la clase Punto1 para poder usar sus metodos
+                        string AuxCadena = punto1.RecibirCadenaHasta20(Cadena);
                         Imprimir("\n" + "Cadena Original: " + Cadena);
-                        //Imprimir("\n" + "Cadena Recortada: " + AuxCadena + "\n");
+                        Imprimir("\n" + "Cadena Recortada: " + AuxCadena + "\n");
                         break;
                     }
                 default:
