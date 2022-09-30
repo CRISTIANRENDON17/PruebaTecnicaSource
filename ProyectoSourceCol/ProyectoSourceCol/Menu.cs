@@ -55,6 +55,18 @@ internal class Menu
                         punto2.ValidadFibonacci(Cadena);
                         break;
                     }
+                case "3":
+                    {
+                        Imprimir("\n" + "\n" + "!-----------Punto3----------!" + "\n" + "\n");
+                        /*se podria trabajar con arraylist y usar metodos de arreglos propios de arraylist pero 
+                         por temas de practica y de conocimientos se hara con arreglos e metodos normales y tambien numeros aleatorios*/
+                        int[] arreglo = new int[10];
+                        Punto3 punto3 = new Punto3(); //crea un objeto de la clase Punto3 para poder usar sus metodos
+                        arreglo = punto3.CrearArrelo(arreglo);
+                        arreglo = punto3.OrganizarArreglo(arreglo);
+                        punto3.MostrarArreglo(arreglo);
+                        break;
+                    }
                 default:
                     {
                         Imprimir("\n" + "\n" + "\n" + "Te has equivocado de opcion, por favor vuelve a ingresar los datos" + "\n" + "\n" + "\n");
